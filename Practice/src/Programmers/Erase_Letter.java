@@ -1,5 +1,7 @@
 package Programmers;
 
+import java.util.Arrays;
+
 public class Erase_Letter {
 
 	public static void main(String[] args) {
@@ -7,15 +9,17 @@ public class Erase_Letter {
 		int[] indices = {1, 16, 6, 15, 0, 10, 11, 3};
 		String answer = "";
 		
-		char[] arr = new char[my_string.length()];
-		
-		for(int k=0; k<arr.length; k++) {
-			arr[k] = my_string.charAt(k);
-		}
+		String[] arr = my_string.split("");
 		
 		for(int k=0; k<indices.length; k++) {
-		
+			arr[indices[k]] = "";
 		}
+		
+		for(String x: arr) {
+			answer += x;
+		}
+		
+		System.out.println(answer);
 	}
 
 }
