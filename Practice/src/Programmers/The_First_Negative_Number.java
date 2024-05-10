@@ -9,6 +9,7 @@ public class The_First_Negative_Number {
 		for(int k=0; k<num_list.length; k++) {
 			if(num_list[k] < 0) {
 				answer = k;
+				break;
 			}else {
 				answer = -1;
 			}
