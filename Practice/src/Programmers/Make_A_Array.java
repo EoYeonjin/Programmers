@@ -1,5 +1,7 @@
 package Programmers;
 
+import java.util.Arrays;
+
 public class Make_A_Array {
 
 	public static void main(String[] args) {
@@ -10,9 +12,7 @@ public class Make_A_Array {
 			answer[j] = k*(j+1);
 		}
 		
-		for(int j=0; j<answer.length; j++) {
-			System.out.println(answer[j]);
-		}
+		System.out.println(Arrays.toString(answer));
 		
 	}
 

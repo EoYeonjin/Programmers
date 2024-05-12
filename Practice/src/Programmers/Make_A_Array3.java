@@ -1,6 +1,7 @@
 package Programmers;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 
 public class Make_A_Array3 {
 
@@ -18,9 +19,7 @@ public class Make_A_Array3 {
 		
 		int[] answer = dtos.stream().mapToInt(x -> x).toArray();
 		
-		for(int k=0; k<answer.length; k++) {
-			System.out.print(answer[k]);
-		}
+		System.out.println(Arrays.toString(answer));
 	}
 
 }

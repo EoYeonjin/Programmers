@@ -1,6 +1,7 @@
 package Programmers;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 
 public class Truncate_List {
 
@@ -34,9 +35,7 @@ public class Truncate_List {
 		
 		int[] answer = arr.stream().mapToInt(x -> x).toArray();
 		
-		for(int k=0; k<answer.length; k++) {
-			System.out.println(answer[k]);
-		}
+		System.out.println(Arrays.toString(answer));
 		
 		
 	}

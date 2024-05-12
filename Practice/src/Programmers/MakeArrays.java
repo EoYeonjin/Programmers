@@ -1,6 +1,7 @@
 package Programmers;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 
 public class MakeArrays {
 	
@@ -24,6 +25,8 @@ public class MakeArrays {
 		for(int a = 0; a<arr.size(); a++) {
 			answer[a] = arr.get(a);
 		}
+		
+		System.out.println(Arrays.toString(answer));
 	}
 
 }

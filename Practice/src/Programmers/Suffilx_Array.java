@@ -22,9 +22,7 @@ public class Suffilx_Array {
 		
 		Arrays.sort(answer1);
 		
-		for(int k=0; k<arr1.size(); k++) {
-			System.out.print("["+answer1[k]+"]");
-		}
+		System.out.println(Arrays.toString(answer1));
 		System.out.println();
 		
 		String my_string2 = "programmers";
@@ -43,9 +41,7 @@ public class Suffilx_Array {
 		
 		Arrays.sort(answer2);
 		
-		for(int k=0; k<arr2.size(); k++) {
-			System.out.print("["+answer2[k]+"]");
-		}
+		System.out.println(Arrays.toString(answer2));
 		
 		
 		

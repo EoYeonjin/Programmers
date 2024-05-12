@@ -1,5 +1,7 @@
 package Programmers;
 
+import java.util.Arrays;
+
 public class Counting_Charachers {
 
 	public static void main(String[] args) {
@@ -14,9 +16,8 @@ public class Counting_Charachers {
 			}
 		}
 		
-		for(int k=0; k<answer.length; k++) {
-			System.out.print(answer[k]);
-		}
+		System.out.println(Arrays.toString(answer));
+		
 	}
 
 }
