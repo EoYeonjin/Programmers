@@ -8,26 +8,19 @@ public class Main {
         String S = br.readLine();
         
         
-        int sum = hash(L, S);
+        long sum = hash(L, S);
         System.out.print(sum);
 	}
 	
-	static int hash(int L, String S){
-		int sum = 0;
+	static long hash(int L, String S){
+		long sum = 0;
+		long paw = 1;
         
         for(int i=0; i<L; i++){
-        	char c = S.charAt(i);
-        	int m = (int) c - 96;
-        	int mul = 1;
+        	sum += (S.charAt(i) - 96)*paw;
+        	paw = (paw*31)%1234567891;
         	
-        	if(i == 0) sum += m;
-        	else{
-        		for(int j=0; j<i; j++){
-        			mul *= 31;
-        		}
-        		sum += m*mul;
-        	}
         }
-        return sum;
+        return sum%1234567891;
 	}
 }
